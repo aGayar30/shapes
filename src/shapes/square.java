@@ -7,13 +7,13 @@ public class square extends shape{
         super(name, color,isfilled);
         if (side >0)
             this.side = side;
-        else System.out.println("side can't be negative");
+        else System.out.println("side can't be negative or zero");
     }
 
     public square(double side) {
         if (side >0)
             this.side = side;
-        else System.out.println("side can't be negative");
+        else System.out.println("side can't be negative or zero");
     }
 
     public double getSide() {
@@ -23,7 +23,7 @@ public class square extends shape{
     public void setSide(double side) {
         if (side >0)
             this.side = side;
-        else System.out.println("side can't be negative");
+        else System.out.println("side can't be negative or zero");
     }
 
     @Override

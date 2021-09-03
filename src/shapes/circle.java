@@ -8,13 +8,13 @@ public class circle extends shape {
         super(name, color, isfilled);
         if (radius >0)
         this.radius = radius;
-        else System.out.println("radius can't be negative");
+        else System.out.println("radius can't be negative or zero");
     }
 
     public circle(double radius) {
         if (radius >0)
             this.radius = radius;
-        else System.out.println("radius can't be negative");
+        else System.out.println("radius can't be negative or zero");
     }
 
     public double getRadius() {
@@ -24,7 +24,7 @@ public class circle extends shape {
     public void setRadius(double radius) {
         if (radius >0)
             this.radius = radius;
-        else System.out.println("radius can't be negative");
+        else System.out.println("radius can't be negative or zero");
     }
 
     @Override
