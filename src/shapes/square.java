@@ -3,13 +3,17 @@ package shapes;
 public class square extends shape{
    private double side;
 
-    public square(String name, String color, double side) {
-        super(name, color);
-        this.side = side;
+    public square(String name, String color,boolean isfilled, double side) {
+        super(name, color,isfilled);
+        if (side >0)
+            this.side = side;
+        else System.out.println("side can't be negative");
     }
 
     public square(double side) {
-        this.side = side;
+        if (side >0)
+            this.side = side;
+        else System.out.println("side can't be negative");
     }
 
     public double getSide() {
@@ -17,7 +21,9 @@ public class square extends shape{
     }
 
     public void setSide(double side) {
-        this.side = side;
+        if (side >0)
+            this.side = side;
+        else System.out.println("side can't be negative");
     }
 
     @Override

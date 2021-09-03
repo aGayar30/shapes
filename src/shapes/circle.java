@@ -4,13 +4,17 @@ public class circle extends shape {
 
     private double radius;
 
-    public circle(String name, String color, double radius) {
-        super(name, color);
+    public circle(String name, String color,boolean isfilled, double radius) {
+        super(name, color, isfilled);
+        if (radius >0)
         this.radius = radius;
+        else System.out.println("radius can't be negative");
     }
 
     public circle(double radius) {
-        this.radius = radius;
+        if (radius >0)
+            this.radius = radius;
+        else System.out.println("radius can't be negative");
     }
 
     public double getRadius() {
@@ -18,7 +22,9 @@ public class circle extends shape {
     }
 
     public void setRadius(double radius) {
-        this.radius = radius;
+        if (radius >0)
+            this.radius = radius;
+        else System.out.println("radius can't be negative");
     }
 
     @Override
