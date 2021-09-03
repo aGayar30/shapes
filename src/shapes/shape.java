@@ -4,10 +4,12 @@ public  abstract class shape {
 
     private String name;
     private String color;
+    private boolean isfilled;
 
-    public shape(String name, String color) {
+    public shape(String name, String color, boolean isfilled) {
         this.name = name;
         this.color = color;
+        this.isfilled = isfilled;
     }
 
     public shape() {
@@ -27,6 +29,14 @@ public  abstract class shape {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public boolean isIsfilled() {
+        return isfilled;
+    }
+
+    public void setIsfilled(boolean isfilled) {
+        this.isfilled = isfilled;
     }
 
     public abstract double getArea();
