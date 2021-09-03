@@ -10,6 +10,9 @@ public  abstract class shape {
         this.color = color;
     }
 
+    public shape() {
+    }
+
     public String getName() {
         return name;
     }

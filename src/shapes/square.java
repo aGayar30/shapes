@@ -8,6 +8,10 @@ public class square extends shape{
         this.side = side;
     }
 
+    public square(double side) {
+        this.side = side;
+    }
+
     public double getSide() {
         return side;
     }
