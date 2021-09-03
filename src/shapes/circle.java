@@ -29,11 +29,11 @@ public class circle extends shape {
 
     @Override
     public double getArea() {
-        return 3.14*radius*radius;
+        return Math.PI*radius*radius;
     }
 
     @Override
     public double getParemeter(){
-        return 2*3.14*radius;
+        return 2*Math.PI*radius;
     }
 }
